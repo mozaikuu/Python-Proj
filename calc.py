@@ -6,9 +6,32 @@ print(1000 + 25 *30)
 print("he" * 10)
 
 #now i start calculator
-num1= input("if done press enter to continue ")
-num2= input("if done press enter to continue ")
-result = float(num1) + float(num2) #float is a number with decimal point
-print(result)
+num1= float(input("enter number"))   #float is a number with decimal point
+op= input("operator ")
+num2= float(input("enter number"))
+
+if op == "+":
+    print(num1 + num2)
+elif op == "-":
+    print(num1 - num2)
+elif op == "*":
+    print(num1 * num2)
+elif op == "x":
+    print(num1 * num2)
+elif op == "%":
+    print(num1 / num2)
+elif op == "/": 
+    print(num1 / num2)
+elif op == "**":
+    print(num1 * num1)
+elif op == "***":
+    print(num1 * num1 * num1)
+elif op == "//":
+    print(num1 / num1)
+elif op == "///":
+    print(num1 / num1 / num1)
+else:
+    print("invalid operator")
+
 
 
